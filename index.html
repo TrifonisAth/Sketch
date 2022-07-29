@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Drawing</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <h1 class="title">Drawing</h1>
+      <div class="content">
+        <div class="board"></div>
+        <div class="buttons">
+          <button onclick="changeColor('000000')" class="color">Black</button>
+          <button onclick="changeColor('ffffff')" class="color">Eraser</button>
+          <button onclick="changeColor('random')" class="color">Random</button>
+          <button onclick="resetBoard()" class="reset">Clear</button>
+        </div>
+        <div>
+          <input
+            type="text"
+            placeholder="Size"
+            value="16"
+            onchange="changeSize(this.value)"
+          />
+          <button>set</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
